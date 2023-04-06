@@ -13,7 +13,7 @@ const forecast = (latitude, longitude, callback) => {
     } else {
       callback(
         undefined,
-        `${body.current.weather_descriptions[0]}.It is currently ${body.current.temperature} out there and its feels like ${body.current.feelslike}`
+        `${body.current.weather_descriptions[0]}.It is currently ${body.current.temperature} out there and considering the wind chill factor its feels like ${body.current.feelslike}`
       );
     }
   });
